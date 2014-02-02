@@ -1,112 +1,45 @@
-body {
-  width:100%;
-  line-height:1;
-  font-size:13px;
-	font-family:Arial, Helvetica, sans-serif;
-	color:#000;
-  }
-h1 {margin-left:25px; font-size: 35px;}
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Bagow</title></head><body>
+<link rel="stylesheet" type="text/css" href="style.css">
+<h1>Bagow</h1>
+<div id="main">
+<div class="main">
 
-p, .tab-content li, h1, h2, h3{ /* This insures that there's enough space between your paragraphs, headings, etc */
-    margin-bottom: 10px;
-}
+	<div id="Pro"><a href="#Pro" title="Pro">Про нас</a> 
+	<div class="content">
+   		<h3>Мы группа молодых людей</h3>
+   		<p>Много работаем. Любим все что можно назвать технологиями</p>
+	</div></div>
+    
+	<div id="Par"><a href="#Par" title="Par">Сделали</a>
+	<div class="content">
+       	<h3>Вот над чем мы работали:</h3>
+        <p>Тут будет длинный список работ :) Значительно длиннее этого:
+		<a href="http://butik-posudu.com.ua/">Бутик Посуды</a> - Интернет-магазин посуды в Украине.
+		<a href="http://dnepr-portal.com/">Dnepropetrovsk</a> - Сайт-портал Днепропетровска.
+		<a href="http://4game.com.ua">4game</a> - Интернет-магазин приставок в Украине.
+		<a href="http://postroika.biz.ua">Постройка</a> - Ремонт и строительство в Днепропетровске.
+		<a href="http://vernost.dp.ua">Верность</a> - Сайт ОО "Верность".
+		<a href="http://kirpiciki.com">Кирпичики</a> - Строительство в Днепропетровске.
+		<a href="http://rs-biznesclub.com">БК "СРБУ"</a> - Бизнес клуб.
+		<a href="http://krepost.dp.ua">Крепость</a> - Утепление фасадов и строительство под ключ.
+		<a href="http://serbska.org">Мо "ОСДЕА"</a> - Объединенная Сербская диаспора Евразии.
+		<a href="http://s-s.com.ua">Стил Стрит</a> - Каркасное строительство.
+		<a href="http://serbbiz.com">Юг-Укр-Контракт</a> - Многопрофильная компания.
+		<a href="http://sets.com.ua">TM "SETS"</a> - Твердотопливное оборудование.
+		<a href="http://fasadi.dp.ua">ООО "Фасады"</a> - Утепление фасадов в Днепропетровской области.
+		<a href="http://reznik.tk">Александр Резник</a> - Известный украинский художник.
+		<a href="http://kovacevic.co">Ковачевич</a> - Строительство по сербским технологиям.
+		<a href="http://juristi.dp.ua">Юристы</a> - Юридическая консультация в Днепропетровске.
+		<a href="http://pelleti.tk">Пеллеты</a> - Продажа пеллет в Украине.
+		<a href="http://amalteja.dp.ua">Амалтея</a> - Днепропетровское фермерское хозяйство.</p>
+	</div></div>
 
-.tab-container h3{ /* Effects only the h3 headings inside the tabs */
-	font-size:147%;
-	color:#000;
-}
+	<div id="Kon"><a href="#Kon" title="Kon">Контакты</a>
+	<div class="content">
+		<h3>Для связи</h3>
+		<p>380.973.588.984</p>
+	</div></div>
 
-#container{ /* Use this to position the entire tab module */
-	margin: 0 auto;	
-}
-
-.tab-container {
-	position: relative; /* It's important to keep this position relative and the absolute positions in this file the same */
-	width: 100%;
-	z-index: 0;
-}
-
-/* Tabs */
-.tab-container > div > a {
-	position: relative !important; /* Keeps the tabs in line with each other */
-	color: #000;
-	display: inline-block;
-	font-size: 15px;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	margin: 1px;
-	padding: 10px 25px;
-  top:7px;
-  width: 60px;
-	height: 10px;
-}
-
-.tab-container > div:target > a { 
-	font-weight: bold;
-}
-
-.tab-container > div > div { 
-	background: #FFF;
-	z-index: -2;
-	top: 0;
-	min-height: 250px; /* Change this value if you need more or less content space */
-	position: absolute; /* Fixes IE 7 & 8 */
-	left: 120px;
-	width: 85%;
-}
-
-.tab-container > div:not(:target) > div { 
-	position: absolute; /* This keeps the tab module contained */
-}
-
-.tab-container > div:target > div { 
-	position: absolute; 
-	z-index: 3 !important; /* Brings the content to the front depending on the tab that was clicked */ 
-}
-
-div.tab-content{ /* Styles the inner content of the tabs */
-  	padding-bottom: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.tab-content img{ 
-	margin:0 auto; 
-	display:block; 
-	padding-bottom: 20px;
-  padding-top: 10px;
-}
-
-
-
-/*tabs*/
-
-#tabs-right { 
-    position: relative; 
-    padding-right: 6.5em; 
-}
-
-#tabs-right .ui-tabs-nav { 
-    position: absolute; 
-    right: 0.25em; 
-    top: 0.25em; 
-    bottom: 0.25em; 
-    width: 6em; 
-    padding: 0.2em 0.2em 0.2em 0em; 
-}
-
-#tabs-right .ui-tabs-nav li { 
-    width: 100%; 
-    border-left: none; 
-    border-bottom-width: 1px !important; 
-    overflow: hidden; 
-} 
-
-#tabs-right .ui-tabs-nav li.ui-tabs-selected, 
-#tabs-right .ui-tabs-nav li.ui-state-active { 
-    left: -1px; 
-    border-left: 1px solid transparent; 
-} 
-#tabs-right .ui-tabs-nav li a { 
-    width: 100%; 
-} 
-
+</div></div>
+</body></html>
